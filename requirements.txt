@@ -79,6 +79,5 @@ typing-inspection==0.4.2
 typing_extensions==4.15.0
 tzdata==2025.3
 urllib3==2.6.3
-wandb==0.23.1
 Werkzeug==3.1.5
 zipp==3.23.0
