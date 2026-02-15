@@ -98,13 +98,6 @@ flowchart LR
     F --> G["Scale-Invariant Log Loss (training)"]
 ```
 
-### How to print the exact model architecture
-Use this command to print the instantiated network and verify your best checkpoint loads correctly:
-
-```bash
-python -c "import torch; from src.model import UnderwaterDepthModel; m=UnderwaterDepthModel(freeze_encoder=True); ckpt=torch.load('output/best_model.pth', map_location='cpu'); m.load_state_dict(ckpt['model_state_dict']); print(m)"
-```
-
 ## Evaluation Protocol
 Two models are compared on underwater validation (`data/splits/val_flsea.txt`):
 - **Baseline**: pretrained model without fine-tuning.
