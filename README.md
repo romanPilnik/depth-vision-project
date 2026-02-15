@@ -113,9 +113,9 @@ Metrics (`evaluate.py`):
 ### What the metrics mean (accuracy and precision)
 - **Abs Rel (Absolute Relative Error):** average relative distance between predicted depth and ground-truth depth. A lower value means better **overall depth accuracy**.
 - **RMSE log:** root-mean-square error in log-depth space. It penalizes larger multiplicative errors and reflects how consistently the model preserves relative depth scale; lower values indicate better **precision/stability** across different depth ranges.
-- **delta < 1.25 (higher is better):** fraction of pixels where prediction is within a 1.25× ratio of ground truth. Higher values mean more predictions are tightly correct, indicating stronger **pixel-level precision**.
-- **delta < 1.25² (higher is better):** same idea with a looser tolerance (~1.56×), showing **moderate-error robustness**.
-- **delta < 1.25³ (higher is better):** loosest tolerance (~1.95×), showing how often predictions are at least reasonably close and indicating **overall reliability**.
+- **delta < 1.25:** fraction of pixels where prediction is within a 1.25× ratio of ground truth. Higher values mean more predictions are tightly correct, indicating stronger **pixel-level precision**.
+- **delta < 1.25²:** same idea with a looser tolerance (~1.56×), showing **moderate-error robustness**.
+- **delta < 1.25³:** loosest tolerance (~1.95×), showing how often predictions are at least reasonably close and indicating **overall reliability**.
 
 Interpretation of results:
 - Very low **Abs Rel** and **RMSE log** for the fine-tuned model indicate substantially improved underwater depth **accuracy** and more stable scaling behavior.
