@@ -123,14 +123,14 @@ Training checkpoint note:
 - `output/best_model.pth` saved at epoch index `9` (10th epoch) with best training-validation loss `0.0123`.
 
 ## Qualitative Results (Baseline vs Fine-tuned)
-Images are directly embedded from your output folders.
+Images are directly embedded from your `assets/` folders.
 
-| Baseline (`output/eval_baseline`) | Fine-tuned (`output/eval`) |
+| Baseline (`assets/pretrained_model_images`) | Fine-tuned (`assets/finetuned_model_images`) |
 |---|---|
-| ![Baseline 0](output/eval_baseline/vis_000.png) | ![Fine-tuned 0](output/eval/vis_000.png) |
-| ![Baseline 1](output/eval_baseline/vis_001.png) | ![Fine-tuned 1](output/eval/vis_001.png) |
-| ![Baseline 2](output/eval_baseline/vis_002.png) | ![Fine-tuned 2](output/eval/vis_002.png) |
-| ![Baseline 3](output/eval_baseline/vis_003.png) | ![Fine-tuned 3](output/eval/vis_003.png) |
+| ![Baseline 0](assets/pretrained_model_images/vis_000.png) | ![Fine-tuned 0](assets/finetuned_model_images/vis_000.png) |
+| ![Baseline 1](assets/pretrained_model_images/vis_001.png) | ![Fine-tuned 1](assets/finetuned_model_images/vis_001.png) |
+| ![Baseline 2](assets/pretrained_model_images/vis_002.png) | ![Fine-tuned 2](assets/finetuned_model_images/vis_002.png) |
+| ![Baseline 3](assets/pretrained_model_images/vis_003.png) | ![Fine-tuned 3](assets/finetuned_model_images/vis_003.png) |
 
 ## Reproducibility
 
