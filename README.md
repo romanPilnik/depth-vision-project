@@ -121,6 +121,10 @@ Interpretation of your results:
 - Very low **Abs Rel** and **RMSE log** for the fine-tuned model indicate substantially improved underwater depth **accuracy** and more stable scaling behavior.
 - Much higher **delta** scores show that a far larger portion of pixels fall within acceptable error bounds, indicating better **precision** and robustness.
 
+### Estimated model accuracy
+Using the fine-tuned model's **Abs Rel = 0.1244**, an approximate depth-estimation accuracy can be expressed as:
+- **Accuracy ≈ 1 - Abs Rel = 0.8756 (87.56%)**
+
 ## Quantitative Results (Underwater Validation)
 
 | Model | Abs Rel ↓ | RMSE log ↓ | delta<1.25 ↑ | delta<1.25² ↑ | delta<1.25³ ↑ |
