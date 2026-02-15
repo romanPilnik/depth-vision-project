@@ -2,7 +2,7 @@
 
 ## Abstract
 This project studies monocular depth estimation for underwater scenes by fine-tuning a pretrained **Depth Anything Small** model (`LiheYoung/depth-anything-small-hf`).  
-The main goal is to adapt a strong general-depth model to underwater visual conditions (color distortion, low contrast, backscatter) and evaluate whether fine-tuning improves underwater depth quality.
+The main goal is to adapt a strong general-depth model to underwater visual conditions (color distortion, low contrast) and evaluate whether fine-tuning improves underwater depth quality.
 
 ## Problem Statement
 Depth estimation in underwater environments is difficult because water changes image appearance (haze, color attenuation, lighting inconsistency), which often breaks models trained on standard terrestrial images.
@@ -69,7 +69,7 @@ depth-vision/
 ### Model (`src/model.py`)
 - Base model: `LiheYoung/depth-anything-small-hf`.
 - Wrapper: `UnderwaterDepthModel`.
-- Fine-tuning strategy: encoder backbone frozen (`freeze_encoder=True`), trainable depth-estimation components updated.
+- Fine-tuning strategy: encoder backbone frozen, trainable depth-estimation components updated.
 
 ### Loss (`src/loss.py`)
 - **Scale-Invariant Log Loss** with `lam=0.5` and `eps=1e-6`.
@@ -84,7 +84,6 @@ Default training hyperparameters:
 - Scheduler: `CosineAnnealingLR`
 - Early stopping patience: `3`
 - Gradient clipping: `max_norm=1.0`
-- Device: Apple Silicon `mps` (if available)
 
 ## Neural Network Structure
 
