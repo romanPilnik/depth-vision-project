@@ -138,7 +138,6 @@ Training checkpoint note:
 - `output/best_model.pth` saved at epoch index `9` (10th epoch) with best training-validation loss `0.0123`.
 
 ## Qualitative Results (Baseline vs Fine-tuned)
-Images are directly embedded from your `assets/` folders.
 
 | Baseline (`assets/pretrained_model_images`) | Fine-tuned (`assets/finetuned_model_images`) |
 |---|---|
